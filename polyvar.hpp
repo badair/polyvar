@@ -1,3 +1,10 @@
+/*
+Copyright 2016 Barrett Adair
+
+Distributed under the Boost Software License, Version 1.0.
+(See accompanying file LICENSE.md or copy at http://boost.org/LICENSE_1_0.txt)
+*/
+ 
 #include <boost/preprocessor/seq/seq.hpp>
 #include <boost/preprocessor/seq/elem.hpp>
 #include <boost/preprocessor/seq/size.hpp>
@@ -32,6 +39,7 @@
 #  include <variant>
 #  define POLYVAR_VARIANT_IMPL std::variant
 #  define POLYVAR_VISIT_IMPL std::visit
+// TODO - check these
 #  define POLYVAR_USING \
         using POLYVAR_VARIANT_IMPL<Ts...>::variant; \
         using POLYVAR_VARIANT_IMPL<Ts...>::operator=; \
