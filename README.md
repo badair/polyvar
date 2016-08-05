@@ -22,6 +22,8 @@ struct C {
     int do_something_else(int x) { return x + 2; }
 };
 
+// Define a variant template with self-visiting member
+// functions to emulate a base class
 DEFINE_POLYVAR(my_var,
     (do_something)
     (do_something_else)
