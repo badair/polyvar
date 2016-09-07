@@ -4,7 +4,10 @@ Copyright 2016 Barrett Adair
 Distributed under the Boost Software License, Version 1.0.
 (See accompanying file LICENSE.md or copy at http://boost.org/LICENSE_1_0.txt)
 */
- 
+
+#ifndef POLYVAR_HPP
+#define POLYVAR_HPP
+
 #include <boost/preprocessor/seq/seq.hpp>
 #include <boost/preprocessor/seq/elem.hpp>
 #include <boost/preprocessor/seq/size.hpp>
@@ -70,3 +73,5 @@ struct name : public POLYVAR_VARIANT_IMPL<Ts...> { \
                 static_cast<Args&&>(args)...);}, *this);       \
     }                                                          \
 /**/
+
+#endif // #ifndef POLYVAR_HPP
